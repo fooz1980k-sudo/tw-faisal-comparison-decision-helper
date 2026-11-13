@@ -22,7 +22,7 @@ fit = dict(title="فيصل · أنت من أي نوع؟", icon="sicon-user-circl
     SW("mix_auto", "أضف الشخصيات التلقائية مع شخصياتك"), RADIO("auto_source", "🤖 مصدر المنتجات التلقائي", SOURCES), NUM("pool", "عدد المنتجات التي يحللها", 16, 4, 40), NUM("max_personas", "أقصى عدد شخصيات", 5, 2, 8), NUM("min_reviews", "أقل عدد تقييمات لشخصية «الجودة»", 3, 0, 50), SW("unique", "منتج مختلف لكل شخصية", True),
     SW("p_saver", "💰 شخصية: الأوفر", True), SW("p_quality", "⭐ شخصية: الأعلى تقييماً", True), SW("p_popular", "🔥 شخصية: الأكثر طلباً", True), SW("p_deal", "🏷️ شخصية: أقوى عرض", True), SW("p_gift", "🎁 شخصية: الهدية الفاخرة", True),
     SW("show_pros", "المزايا", True), SW("show_cons", "ما يُنتبه له (صراحة تبني الثقة)", True), T("cta", "نص الزر", "أضف للسلة", mx=30)] + DESIGN())
-build("tw-faisal", {"ar": "فَيصَل — مساعد المقارنة والقرار", "en": "Faisal — Smart Comparison & Decision Helper"},
+build("tw-faisal", repo="tw-faisal-comparison-decision-helper", {"ar": "فَيصَل — مساعد المقارنة والقرار", "en": "Faisal — Smart Comparison & Decision Helper"},
       {"ar": "5 عناصر تحسم تردد العميل: مقارنة بأشرطة أولويات تتغير معها التوصية وسببها، «اختر وقارن» يتذكر ما شاهده، مواجهة وجهاً لوجه، حاسبة السعر لكل وحدة تقرأ الحجم من اسم المنتج، و«أنت من أي نوع؟» تبني الشخصيات تلقائياً من بيانات متجرك — كل الأرقام من منتجاتك الحقيقية.",
        "en": "5 components that end hesitation: priority-slider comparison with a live recommendation and reason, pick-and-compare that remembers what was viewed, head-to-head duel, price-per-unit calculator reading sizes from product names, and a shopper-persona picker built automatically from your store data — every number comes from your real products."},
       [cmp_, pick, duel, val, fit])
